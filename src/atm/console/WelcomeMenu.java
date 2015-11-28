@@ -1,5 +1,6 @@
 package atm.console;
 
+import atm.accaunt.Account;
 import atm.menu.UserCheck;
 
 import java.io.IOException;
@@ -34,7 +35,7 @@ public class WelcomeMenu extends UserCheck{
         }
         System.out.println();
         if (UserCheck.checkAccount())
-            System.out.println("Welcome");
+            System.out.println("Welcome " + userName);
             else
             System.out.println("Wrong account details");
     }

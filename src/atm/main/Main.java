@@ -2,6 +2,7 @@ package atm.main;
 
 import atm.accaunt.Account;
 import atm.console.WelcomeMenu;
+import atm.menu.UserCheck;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -17,6 +18,9 @@ public class Main {
         /**viewing console menu of authorization
          * @see WelcomeMenu
          */
+//        System.out.println(Account.USER_NAMES.toString());
+//        System.out.println(Account.USER_PASSWORDS.toString());
+//        System.out.println(Account.USER_BALANCE.toString());
         WelcomeMenu.AuthorizationConsole();
 //        System.out.println(Account.getUserName("user1"));
 //        System.out.println(Account.getUserPassword("123456"));
@@ -26,9 +30,9 @@ public class Main {
 //        System.out.println(Account.USER_NAMES.get(2));
 //        System.out.println(Account.USER_PASSWORDS.get(2));
 //        System.out.println(Account.USER_BALANCE.get(2));
-
-
-//        System.out.println(Account.checkAccount());
+//
+//
+//        System.out.println(UserCheck.checkAccount());
 
     }
 }

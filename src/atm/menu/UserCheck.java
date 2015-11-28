@@ -6,10 +6,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class UserCheck extends Account{
-    static String userName;
-    static String userPassword;
-    static String nameValue;
-    static String passwordValue;
+    protected static String userName;
+    protected static String userPassword;
+    protected static String nameValue;
+    protected static String passwordValue;
 
 
     protected static String inputName() throws IOException {
@@ -28,6 +28,9 @@ public class UserCheck extends Account{
         for (int i = 0; i < USERS_IN_SYSTEM; i++) {
             nameValue = USER_NAMES.get(i);
             passwordValue = USER_PASSWORDS.get(i);
-        }return (userName.equals(nameValue) && userPassword.equals(passwordValue));
+            if (userName.equals(nameValue) && userPassword.equals(passwordValue))
+                return (userName.equals(nameValue) && userPassword.equals(passwordValue));
+        }
+        return (userName.equals(nameValue) && userPassword.equals(passwordValue));
     }
 }
