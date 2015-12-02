@@ -1,11 +1,9 @@
 package atm.main;
 
 import atm.accaunt.Account;
-import atm.console.WelcomeMenu;
-import atm.menu.UserCheck;
+import atm.console.WelcomeConsole;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
@@ -16,12 +14,12 @@ public class Main {
         Account.addPassword();
         Account.addBalance();
         /**viewing console menu of authorization
-         * @see WelcomeMenu
+         * @see WelcomeConsole
          */
 //        System.out.println(Account.USER_NAMES.toString());
 //        System.out.println(Account.USER_PASSWORDS.toString());
 //        System.out.println(Account.USER_BALANCE.toString());
-        WelcomeMenu.AuthorizationConsole();
+        WelcomeConsole.AuthorizationConsole();
 //        System.out.println(Account.getUserName("user1"));
 //        System.out.println(Account.getUserPassword("123456"));
 //        BigDecimal bg = new BigDecimal(200);

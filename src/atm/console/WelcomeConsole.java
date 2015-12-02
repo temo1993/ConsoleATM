@@ -1,13 +1,12 @@
 package atm.console;
 
-import atm.accaunt.Account;
 import atm.menu.UserCheck;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class WelcomeMenu extends UserCheck{
+public class WelcomeConsole extends UserCheck{
     protected static String NOW_DATE = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE);
     protected static String NOW_TIME = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_TIME);
 
